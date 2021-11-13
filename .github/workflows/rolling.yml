@@ -12,7 +12,6 @@ jobs:
     strategy:
       matrix:
         jgroups: [3.6.20, 4.2.4, 5.0.0]
-        java: [8, 11]
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -34,10 +33,10 @@ jobs:
           platforms: linux/amd64,linux/arm64/v8
           push: true
           build-args: |
-            JAVA_VERSION=${{ matrix.java }}
+            JAVA_VERSION=11
             JGROUPS_VERSION=${{ matrix.jgroups }}
           tags: |
-            ghcr.io/${{ github.repository_owner }}/jgroups:${{ matrix.java }}-${{ matrix.jgroups }}
+            ghcr.io/${{ github.repository_owner }}/jgroups:${{ matrix.jgroups }}
           no-cache: false
           labels: |
             org.opencontainers.image.title=jgroups
@@ -52,10 +51,10 @@ jobs:
           platforms: linux/amd64,linux/arm64/v8
           push: true
           build-args: |
-            JAVA_VERSION=${{ matrix.java }}
+            JAVA_VERSION=11
             JGROUPS_VERSION=${{ matrix.jgroups }}
           tags: |
-            ghcr.io/${{ github.repository_owner }}/jgroups:jre-${{ matrix.java }}-${{ matrix.jgroups }}
+            ghcr.io/${{ github.repository_owner }}/jgroups:jre-${{ matrix.jgroups }}
           no-cache: false
           labels: |
             org.opencontainers.image.title=jgroups

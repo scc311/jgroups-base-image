@@ -6,9 +6,9 @@ This repository contains 2 docker images that contain JGroups and Java: one the 
 
 ## Available Images
 
-Both the JRE and JDK images are built with multiple Java versions and JGroups versions:
+Both the JRE and JDK images are built with multiple JGroups versions:
 
- - Java: `8`, `11`, `15`
+ - Java: `11`
  - JGroups: `3.6.20`, `4.2.4`, `5.0.0`
 
 The tag format to specify these versions is: `ghcr.io/scc311/jgroups:{JAVA_VERSION}-{JGROUPS_VERSION}`
