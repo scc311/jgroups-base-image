@@ -1,5 +1,7 @@
 # JGroups Base Image 🐳
 
+[![Rolling Release](https://github.com/scc311/jgroups-base-image/actions/workflows/rolling.yml/badge.svg?branch=main)](https://github.com/scc311/jgroups-base-image/actions/workflows/rolling.yml)
+
 This repository contains 2 docker images that contain JGroups and Java: one the full JDK, the other just the JRE. These images can be used as base images for your own Dockerfiles. You can see an example usage in the [JGroups Template repository](https://github.com/scc311/jgroups-template).
 
 ---
