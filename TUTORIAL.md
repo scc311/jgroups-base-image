@@ -50,7 +50,7 @@ For example, if wanting to compile and run all the code in the [template reposit
     ```
  5. Run a client (and get a random number between 0 and 100):
     ```bash
-    java -cp "./jgroups-3.6.20.Final.jar":. -Djava.net.preferIPv4Stack=true client.Client 0 100
+    java -cp "./jgroups-3.6.20.Final.jar":. client.Client 0 100
     ```
 
 > 🍎    **MacOS Users**: The `-Djava.net.preferIPv4Stack=true` flag is for you! JGroups [might not run correctly](https://github.com/belaban/JGroups/wiki/Multicast-routing-on-Mac-OS) without it.
