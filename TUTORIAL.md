@@ -53,7 +53,7 @@ For example, if wanting to compile and run all the code in the [template reposit
     java -cp "./jgroups-3.6.20.Final.jar":. client.Client 0 100
     ```
 
-> 🍎    **MacOS Users**: The `-Djava.net.preferIPv4Stack=true` flag is for you! JGroups [might not run correctly](https://github.com/belaban/JGroups/wiki/Multicast-routing-on-Mac-OS) without it.
+> 🍎    **MacOS Users**: The `-Djava.net.preferIPv4Stack=true` flag is for you! JGroups [might not run correctly](https://github.com/belaban/JGroups/wiki/Multicast-routing-on-Mac-OS) without it. Please keep this flag in regardless of your OS though!
 
 
 ## 3. Add JGroups to Your Workspace
