@@ -1,13 +1,13 @@
 # JGroups Setup
 
 JGroups is not part of the Java Platform (the “standard library” for those who prefer more C-like terms) like Java RMI is, so it can’t simply be used in your program with just a `import java.X` or `import javax.X`. Instead, JGroups is a library provided from an external `.jar` file. This document covers 3 things:
-    1. How to get JGroups
-    2. How to compile a program that uses the JGroups library
-    3. How to make your language server aware of JGroups
+  1. How to get JGroups
+  2. How to compile a program that uses the JGroups library
+  3. How to make your language server aware of JGroups
 
 ## 1. How to get JGroups
 
-To get JGroups you'll need to download the `.jar` file. You can do so from the JGroups [sourceforge page](https://sourceforge.net/projects/javagroups/files/JGroups/). As to be better supported by both online documentation and teaching staff, using version `3.6.20` is best. You then want to save the downloaded `.jar` file to a known location so you can refer to it later.
+To get JGroups you'll need to download the `.jar` file. You can do so from the JGroups [sourceforge page](https://sourceforge.net/projects/javagroups/files/JGroups/). As to be better supported by both online documentation and teaching staff, you should be using version `3.6.20`. You then want to save the downloaded `.jar` file to a known location so you can refer to it later.
 
 ### With Docker
 
@@ -60,7 +60,7 @@ For example, if wanting to compile and run all the code in the [template reposit
 
 > Visual Studio Code is perhaps the most popular editor used by the class, so this section is relevant to just that. If you use another editor, it is up to you to find out how to perform a like action.
 
-When programming with JGroups, you editor will likely not be able to find any references to JGroups via the language server (the part of the editor that helps correct you and place red underlines when it thinks you've not done something correctly). If you want to fix this, you can do so with by adding the `.jar` to your project's list of referenced libraries. The `gif` below shows this process for the latest VS Code as of Nov 2021:
+When programming with JGroups, your editor will likely not be able to find any references to JGroups via the language server (the part of the editor that helps correct you and place red underlines when it thinks you've not done something correctly). If you want to fix this, you can do so with by adding the `.jar` to your project's list of referenced libraries. The `gif` below shows this process for the latest VS Code as of Nov 2021:
 
 ![reference jgroups](./.assets/jgroups-reference.gif)
 
