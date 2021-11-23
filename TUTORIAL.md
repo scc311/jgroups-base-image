@@ -42,11 +42,11 @@ For example, if wanting to compile and run all the code in the [template reposit
     ```
  3. Repeat the following `N` times to create `N` backend servers:
     ```bash
-    java -cp "./jgroups-3.6.20.Final.jar":. -Djava.net.preferIPv4Stack=true backend.Backend
+    java -cp "./jgroups-3.6.20.Final.jar":. -Djava.net.preferIPv4Stack=true -Djgroups.bind_addr=127.0.0.1 backend.Backend
     ```
  4. Run a frontend server:
     ```bash
-    java -cp "./jgroups-3.6.20.Final.jar":. -Djava.net.preferIPv4Stack=true frontend.Frontend
+    java -cp "./jgroups-3.6.20.Final.jar":. -Djava.net.preferIPv4Stack=true -Djgroups.bind_addr=127.0.0.1 frontend.Frontend
     ```
  5. Run a client (and get a random number between 0 and 100):
     ```bash
