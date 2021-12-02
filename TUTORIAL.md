@@ -23,7 +23,7 @@ When writing code that uses JGroups, you'll probably have a few imports that sta
 
 > In this document, I've used `library` as a synonym for `package` to better generalize the concepts
 
-To set the classpath via the command line argument, you simply need to be in the root directory of your Java project (or in the same directory as your `.java` files if you don't use packages) and know the path (relative or absolute) to the `.jar` file containing the library. Then you can compile like so:
+To set the classpath via the command line argument, you simply need to be in the root directory of your Java project (or in the same directory as your `.java` files if you don't use packages) and know the path (relative or absolute) to the `.jar` file(s) containing the library(s). Each package you need to use should be separated by a colon (`:`), and so java can still use packages defined in your local directory, you also need to include a final path: your current directrory (`.`). For example, to use the JGroups package and packages in your local project, you can run the following:
 
 ```bash
 javac -cp "<path to your .jar file>":. <your java files (e.g. *.java)>
