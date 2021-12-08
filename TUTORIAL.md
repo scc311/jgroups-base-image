@@ -57,6 +57,8 @@ For example, if wanting to compile and run all the code in the [template reposit
 
 > 🍎    **MacOS Users**: The `-Djava.net.preferIPv4Stack=true` flag is for you! JGroups [might not run correctly](https://github.com/belaban/JGroups/wiki/Multicast-routing-on-Mac-OS) without it. Please keep this flag in regardless of your OS though!
 
+> 🪟  **Windows Users** (again): The `*/*.java` part of the `javac` command might not work in your command lines. Instead, replace the first `*` with the package you wish to compile (for example: `javac -cp "./jgroups-3.6.20.Final.jar":. frontend\*.java`). Or better yet, use a unix-like system?
+
 
 ### Lab Machines
 
